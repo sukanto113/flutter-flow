@@ -1,4 +1,4 @@
-# course_prac_app
+# Flutter Flow
 
 A new Flutter project.
 
