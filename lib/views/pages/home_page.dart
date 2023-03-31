@@ -2,6 +2,7 @@ import 'package:course_prac_app/app/assigments/row_and_column_layout_assignment.
 import 'package:course_prac_app/app/i_am_rich/i_am_rich_app.dart';
 import 'package:course_prac_app/app/mi_card/mi_card_app.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,7 +21,12 @@ class HomePage extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () async {
+              final uri = Uri.parse('https://github.com/sukanto113/flutter-flow/blob/master/privacy-policy.md');
+              if(await canLaunchUrl(uri)) {
+                await launchUrl(uri);
+              }
+            },
             icon: const Icon(Icons.privacy_tip_outlined),
           ),
         ],
