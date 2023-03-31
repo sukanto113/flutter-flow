@@ -27,7 +27,7 @@ class MiCard extends StatelessWidget {
           children: [
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage("images/avatar.png"),
+              backgroundImage: AssetImage("assets/images/avatar.png"),
             ),
             const Text(
               'John Dow',

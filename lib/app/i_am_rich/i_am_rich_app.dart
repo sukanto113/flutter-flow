@@ -29,7 +29,7 @@ class IAmRich extends StatelessWidget {
       ),
       body: const Center(
         child: Image(
-          image: AssetImage('images/diamond.png'),
+          image: AssetImage('assets/images/diamond.png'),
         ),
       ),
     );
