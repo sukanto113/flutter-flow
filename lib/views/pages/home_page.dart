@@ -1,4 +1,5 @@
 import 'package:course_prac_app/app/assigments/row_and_column_layout_assignment.dart';
+import 'package:course_prac_app/app/dice/dice_page.dart';
 import 'package:course_prac_app/app/i_am_rich/i_am_rich_app.dart';
 import 'package:course_prac_app/app/mi_card/mi_card_app.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +44,12 @@ class HomePage extends StatelessWidget {
             title: "Mi Card",
             onTap: () {
               pushRoute(context, const MiCard());
+            },
+          ),
+          AppListItem(
+            title: "Two Dice",
+            onTap: () {
+              pushRoute(context, const DicePage());
             },
           ),
         ],
