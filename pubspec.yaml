@@ -27,6 +27,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/dices/
+    - assets/images/magic8ball/
   
   fonts:
     - family: Pacifico

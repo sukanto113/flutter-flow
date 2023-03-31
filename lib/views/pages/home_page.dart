@@ -1,6 +1,7 @@
 import 'package:course_prac_app/app/assigments/row_and_column_layout_assignment.dart';
 import 'package:course_prac_app/app/dice/dice_page.dart';
 import 'package:course_prac_app/app/i_am_rich/i_am_rich_app.dart';
+import 'package:course_prac_app/app/magic8ball/magic8ball.dart';
 import 'package:course_prac_app/app/mi_card/mi_card_app.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -56,6 +57,12 @@ class HomePage extends StatelessWidget {
             title: "Two Dice",
             onTap: () {
               pushRoute(context, const DicePage());
+            },
+          ),
+          AppListItem(
+            title: "Magic 8 Ball",
+            onTap: () {
+              pushRoute(context, const Magic8BallPage());
             },
           ),
         ],
