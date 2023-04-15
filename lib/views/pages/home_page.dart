@@ -1,4 +1,5 @@
 import 'package:course_prac_app/app/assigments/row_and_column_layout_assignment.dart';
+import 'package:course_prac_app/app/destini/story_page.dart';
 import 'package:course_prac_app/app/dice/dice_page.dart';
 import 'package:course_prac_app/app/i_am_rich/i_am_rich_app.dart';
 import 'package:course_prac_app/app/magic8ball/magic8ball.dart';
@@ -77,6 +78,12 @@ class HomePage extends StatelessWidget {
             title: "Quizzler",
             onTap: () {
               pushRoute(context, const Quizzler());
+            },
+          ),
+          AppListItem(
+            title: "Destini",
+            onTap: () {
+              pushRoute(context, const StoryPage());
             },
           ),
         ],
