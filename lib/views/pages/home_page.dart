@@ -1,5 +1,6 @@
 import 'package:course_prac_app/app/assigments/row_and_column_layout_assignment.dart';
 import 'package:course_prac_app/app/bmi_calculator/screens/input_page.dart';
+import 'package:course_prac_app/app/clima/screens/loading_screen.dart';
 import 'package:course_prac_app/app/destini/story_page.dart';
 import 'package:course_prac_app/app/dice/dice_page.dart';
 import 'package:course_prac_app/app/i_am_rich/i_am_rich_app.dart';
@@ -9,6 +10,7 @@ import 'package:course_prac_app/app/quizzler/quizzler.dart';
 import 'package:course_prac_app/app/xylophone/xylophone.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -91,6 +93,12 @@ class HomePage extends StatelessWidget {
             title: "BMI Calculator",
             onTap: () {
               pushRoute(context, const InputPage());
+            },
+          ),
+          AppListItem(
+            title: "Clima",
+            onTap: () {
+              pushRoute(context, LoadingScreen());
             },
           ),
         ],
